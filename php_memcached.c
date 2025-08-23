@@ -49,14 +49,14 @@
 #ifdef PHP_WIN32
 //Windows extensions are generally built together,
 //so it wont be in the installed location
-#include "igbinary.h"
+#include "igbinary/igbinary.h"
 #else
-# include "ext/igbinary/igbinary.h"
+# include "igbinary/igbinary.h"
 #endif
 #endif
 
 #ifdef HAVE_MEMCACHED_MSGPACK
-# include "ext/msgpack/php_msgpack.h"
+# include "msgpack/php_msgpack.h"
 #endif
 
 # include "ext/spl/spl_exceptions.h"
